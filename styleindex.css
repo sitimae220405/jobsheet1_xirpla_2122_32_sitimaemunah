@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+:root{
+  --pink:#EE0548;
+  --black:#130f40;
+}
+
+*{
+  font-family: 'Playfair Display', serif;
+  margin:0; padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border:none;
+  transition: .2s linear;
+  text-transform: capitalize;
+}
+
+*::selection{
+  background: #CA6F1E;
+  color:#fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6.5rem;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url("image/bg body.jpg");
+}
+
+section{
+  padding:3rem 25%;
+  text-align: center;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  color: white ;
+  font-size: 1.7rem;
+  padding:.8rem 3rem;
+  cursor: pointer;
+  background:var(--pink);
+}
+
+.btn:hover{
+  background: grey;
+  border-color: grey;
+  color:#fff;
+}
+.home{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image:url("image/cover klik 2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content span{
+  font-size: 5rem;
+  color: white; 
+}
+
+.home .content p{
+  font-size: 18px;
+  color: white;
+  width:60rem;
+  text-align: center:
+}

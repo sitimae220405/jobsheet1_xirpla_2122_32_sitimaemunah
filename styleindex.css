@@ -56,19 +56,19 @@ section{
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image:url("image/cover klik 2.jpg");
+  background-image:url("image/cover-home2.png");
   background-size: cover;
   background-position: center;
 }
 
 .home .content span{
   font-size: 5rem;
-  color: white; 
+  color: var(--black); 
 }
 
 .home .content p{
   font-size: 18px;
-  color: white;
+  color: var(--black);
   width:60rem;
   text-align: center:
 }

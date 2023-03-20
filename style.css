@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 :root{
   --pink:#EE0548;
   --black:#130f40;
 }
 
 *{
-  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto Condensed', sans-serif;
   margin:0; padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -60,11 +61,10 @@ section{
 }
 
 .heading h1{
-  font-family: 'Playfair Display', serif;
   font-size: 5rem;
   color: var(--black);
   padding-bottom: 1rem;
-  text-transform: ; 
+  font-weight: bold;
 }
 .heading p{
   text-indent: 50px;
@@ -98,13 +98,14 @@ header{
 header .logo{
   font-size: 3.5rem;
   color: var(--black);
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 header .navbar a{
   color:  var(--black);
   font-size: 2rem;
   margin-left: 2rem;
+  font-weight: bold;
 }
 
 header .navbar a:hover{
@@ -128,6 +129,7 @@ header .navbar a:hover{
   border: none;
   cursor: pointer;
   background: none;
+  font-weight: bold;
 }
 
 .dropdown {
@@ -197,8 +199,6 @@ header .navbar a:hover{
   background-size: cover;
   flex:1 1 33rem;
 }
-
-
 
 .profil .box-container .box h3{
   font-size: 2.5rem;
@@ -387,7 +387,6 @@ header .navbar a:hover{
   font-size: 5rem;
   color: var(--black);
   padding-bottom: 1rem;
-  text-transform: ;
 }
 .kado-ampau p{
   text-indent: 50px;
@@ -408,6 +407,55 @@ header .navbar a:hover{
   cursor: pointer;
   margin: 50px;
 }
+
+
+.form_buku_tamu {
+  width: 700px;
+  height: 500px;
+  background-color: #e7c7d3;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.199);
+  padding: 50px 70px;
+  gap: 25px;
+  justify-content: center;
+  
+  
+}
+
+.form_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+.form_group input {
+  width: 484px;
+  height: 44px;
+  border: 1px solid #e7c7d3;
+  padding: 0 10px;
+
+}
+
+.form_wrapper button {
+  background-color: black;
+  border: none;
+  outline: none;
+  width: 150px;
+  height: 44px;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: auto;
+  justify-content: center;
+ 
+}
+
+
+
 
 
 .story .row{
@@ -467,6 +515,13 @@ header .navbar a:hover{
   cursor: pointer;
 }
 
+.galery .box-container .box p{
+  text-indent: 50px;
+  font-size: 2rem;
+  color:var(--black);
+  margin: 15px;
+}
+
 .galery .box-container .box img{
   height: 100%;
   width: 100%;
@@ -500,11 +555,7 @@ header .navbar a:hover{
   color:var(--black);
 }
 
-.galery .box-container .box .info p{
-  font-size: 1.7rem;
-  color:#333;
-  padding:1rem;
-}
+
 
 video {
   width: 53rem;
@@ -520,7 +571,7 @@ iframe {
     display: inine;
 }
 
-.form_wrapper {
+.form_war {
   width: inherit;
   height: 367px;
   display: flex;
@@ -533,12 +584,12 @@ iframe {
   transition-duration: 5s;
 }
 
-.form_wrapper:hover {
+.form_war:hover {
   background-position: top;
   align-items: center;
 }
 
-.form_buku_tamu {
+.kunjungan {
   align-items: center;
   width: 700px;
   height: 500px;
@@ -550,7 +601,7 @@ iframe {
 
 }
 
-.form_group {
+.form_klub {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -559,7 +610,7 @@ iframe {
   font-family: 'Inter', sans-serif;
 }
 
-.form_group input {
+.form_klub input {
   align-items: center;
   width: 650px;
   height: 44px;
@@ -567,7 +618,7 @@ iframe {
   padding: 10px 20px;
 }
 
-.form_wrapper button {
+.form_war button {
   background-color: black;
   align-items: center;
   border: none;
@@ -597,7 +648,7 @@ input[type=text], select {
   
 }
 .daftar-menu h1{
-  margin: 10px;
+  margin: 50px;
   font-size: 5rem;
   color: var(--black);
 }
@@ -711,7 +762,7 @@ input[type=text], select {
     border: 1px solid #f2f2f2;
     padding: 8px;
     text-indent: 60px;
-    background: #fff;
+    background:#e7c7d3;
   }
   #customers th {
     padding-top: 12px;
@@ -720,6 +771,48 @@ input[type=text], select {
     background-color: #e7c7d3;
     color: white;
   }
+  table, th, td {
+    border: 1px solid black;
+    align-items: center;
+  }
+
+.hidangan {
+  padding: 10px;
+  list-style-type: upper-roman;
+  margin-left: 45rem;
+  font-size: 2.6rem;
+  color:var(--black);
+}
+.hidangan li{
+  font-size : 20px;
+  align-items: center;
+  padding: 5px;
+  display: inine;
+  
+}
+.hidangan h1{
+  font-size: 30rem;
+  margin: 30px;
+}
+
+
+.sampingan {
+  padding: 10 px;
+  list-style-type: upper-roman;
+  margin-left: 45rem;
+  font-size: 2.6rem;
+  color:var(--black);
+}
+
+dl {
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  display: inine;
+}
+
 
   .footer {
     text-align: center;
